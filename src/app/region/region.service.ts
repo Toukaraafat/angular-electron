@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Item } from '../models/item.model';
+import { Item } from './region';
+
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,7 @@ import { Item } from '../models/item.model';
 export class RegionService {
 
 
-    private apiURL = 'https://jsonplaceholder.typicode.com/posts'; // Change this to your API URL
+    private apiURL = 'https://electronkw.net/new_laravel_API/api/regions'; // Change this to your API URL
   
     constructor(private http: HttpClient) { }
   
@@ -39,4 +40,4 @@ export class RegionService {
     }
   }
   
-}
+
